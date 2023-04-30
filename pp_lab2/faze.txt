@@ -1,0 +1,14 @@
+Problem je riješen pomoću stabla. Kako bi se pronašao najbolji potez, evaluira se svaki potez i bira onaj s najvećom vrijednošću.
+1. PODJELA:
+Podjela je funkcionalna. Jedan zadatak je jedan čvor stabla, odnosno provjera jednog stanja ploče. Cilj zadatka je vidjeti je li netko pobijedio. 
+
+2. KOMUNIKACIJA:
+Korišten je model voditelj-radnik. Radnici se prijavljuju i traže zadatak od voditelja. Voditelj šalje zadatke radnicima i prima rezultate. 
+Također, voditelj javlja radnicima kada nema više zadataka i kada je gotova igra. 
+
+3. AGLOMERACIJA:
+Sva podstabla ispod određene dubine (2) smatraju se jednim zadatkom i pretražuju se u dubinu.
+
+4. PRIDRUŽIVANJE:
+Nakon dolaska do određene dubine i stvaranja većeg broja zadataka od broja procesora, 
+svaki procesor dobiva jedan zadatak od voditelja i kada ga obavi, zahtijeva novi.
